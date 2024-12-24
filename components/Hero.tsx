@@ -60,14 +60,25 @@ const Hero = () => {
             Hi! I&apos;m Ahmed Ayman Ahmed Abdelgalel, a Next.js Developer based
             in Egypt.
           </p>
-
-          <a href="#about">
-            <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+          <div className="flex gap-8 max-sm:flex-col">
+            <a href="#about">
+              <MagicButton
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+            <a
+              href="https://drive.google.com/file/d/11Sb_ctqQNP6RcMn4KrtmOe3hy4rhwMoD/view?usp=sharing"
+              target="_blank"
+            >
+              <MagicButton
+                title="Show my CV"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
