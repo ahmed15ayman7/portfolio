@@ -17,7 +17,7 @@ const RecentProjects = () => {
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
-            onClick={() => location.assign(item.link)}
+            onClick={() => window.open(item.link, "_blank")}
           >
             <PinContainer
               title={item.link}
