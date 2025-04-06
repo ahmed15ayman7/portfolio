@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Ahmed Ayman Ahmed Abdelgalel, a Next.js Developer based
+            Hi! I&apos;m Ahmed Ayman Ahmed Abdelgalel, a Full Stack Developer (Reactjs/Nextjs| Nodejs/Nestjs) based
             in Egypt.
           </p>
           <div className="flex gap-8 max-sm:flex-col">
@@ -69,7 +69,7 @@ const Hero = () => {
               />
             </a>
             <a
-              href="https://drive.google.com/file/d/11Sb_ctqQNP6RcMn4KrtmOe3hy4rhwMoD/view?usp=sharing"
+              href="https://drive.google.com/file/d/1wSJaJJmTtE7KN8hpq-H7Smb5ccadw69c/view?usp=drive_link"
               target="_blank"
             >
               <MagicButton

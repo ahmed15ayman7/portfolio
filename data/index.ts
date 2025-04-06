@@ -105,6 +105,23 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mo.svg", "/rq.svg"],
     link: "https://teacher-agent.vercel.app/?show=true",
   },
+
+  {
+    id: 5,
+    title: "Bezrah",
+    des: " Eco-Friendly Roofing & Planting Solutions Discover sustainable, eco-friendly roofing solutions and innovative planting techniques with Bezrah. Elevate your spaces with green, energy-efficient designs.",
+    img: "/bezrah.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.png", "/mui.svg"],
+    link: "https://www.bezrah.org/",
+  },
+  {
+    id: 6,
+    title: "Almanafth",
+    des: "Al Manafth is your trusted platform for professional home services. Connect with verified service providers for plumbing, electrical, cleaning, and more.",
+    img: "/am.png",
+    iconLists: ["/next.svg", "/njs.svg", "/mo.svg", "/ts.svg", "/mui.svg"],
+    link: "https://almanafth.com",
+  },
 ];
 export const activity = [
   {
@@ -195,7 +212,7 @@ export const workExperience = [
     id: 2,
     title: "Backend Developer",
     link: "/#projects",
-    desc: "I developed the backend for SPORTON , halulalemkan and other projects using the Next.js API, improving interactivity.",
+    desc: "I developed the backend for SPORTON , halulalemkan and other projects using the Next.js API ,Node js , Nest.js  and improving interactivity.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
