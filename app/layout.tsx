@@ -7,15 +7,17 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ahmed Ayman Abdelgalel | Front-End Developer Portfolio",
+  title: "Ahmed Ayman Abdelgalel |  Full Stack Developer (Reactjs/Nextjs| Nodejs/Nestjs) Portfolio",
   description:
-    "Discover Ahmed Ayman Abdelgalel's portfolio, showcasing expertise in front-end development with technologies like HTML, CSS, JavaScript, TypeScript, Bootstrap, React, Tailwind CSS, Next.js, MongoDB, Git/GitHub, and MySQL. Explore modern, responsive, and user-focused web applications.",
+    "Discover Ahmed Ayman Abdelgalel's portfolio, showcasing expertise in Full Stack development with technologies like HTML, CSS, JavaScript, TypeScript, Bootstrap, React, Tailwind CSS, Next.js,Nodejs,Nestjs, MongoDB, Git/GitHub,Docker,postgreSql, and MySQL. Explore modern, responsive, and user-focused web applications.",
   keywords: [
     "Ahmed Ayman Abdelgalel",
-    "Front-End Developer",
+    "Full Stack Developer",
     "Web Developer Portfolio",
     "React Developer",
     "Next.js Developer",
+    "Nodejs Developer",
+    "Nestjs Developer",
     "Tailwind CSS Developer",
     "MongoDB Developer",
     "Responsive Web Design",
