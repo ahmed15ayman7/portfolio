@@ -3,4 +3,3 @@ node_modules
 .next/
 public/projects/sporton/home/
 public/projects/sporton/auth/person-info/
-public/projects/sporton/auth/player-info/
