@@ -1,11 +1,24 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
+  const router = useRouter();
+
+  const handleProjectClick = (item: any) => {
+    // إذا لم يكن هناك sections، افتح الرابط مباشرة
+    if (!item.sections || item.sections.length === 0) {
+      window.open(item.link, "_blank");
+    } else {
+      // إذا كان هناك sections، اذهب إلى صفحة تفاصيل المشروع
+      router.push(`/projects/${item.slug}`);
+    }
+  };
+
   return (
     <div id="projects" className="py-20">
       <h1 className="heading">
@@ -17,7 +30,7 @@ const RecentProjects = () => {
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
-            onClick={() => window.open(item.link, "_blank")}
+            onClick={() => handleProjectClick(item)}
           >
             <PinContainer
               title={item.link}
@@ -72,7 +85,9 @@ const RecentProjects = () => {
 
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
+                    {item.sections && item.sections.length > 0
+                      ? "View Details"
+                      : "Check Live Site"}
                   </p>
                   <FaLocationArrow className="ms-3" color="#CBACF9" />
                 </div>

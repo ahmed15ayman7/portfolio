@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://ahmed15ayman7.vercel.app/ah-logo.png",
+        url: "https://ahmed15ayman7.vercel.app/ah-logo.jpeg",
         width: 1200,
         height: 630,
         alt: "Ahmed Ayman Abdelgalel Portfolio Preview",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Ahmed Ayman Abdelgalel | Front-End Developer Portfolio",
     description:
       "Discover the professional portfolio of Ahmed Ayman Abdelgalel, a front-end developer skilled in modern web technologies.",
-    images: ["https://ahmed15ayman7.vercel.app/ah-logo.png"],
+    images: ["https://ahmed15ayman7.vercel.app/ah-logo.jpeg"],
   },
   robots: "index, follow",
 };
@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/ah-logo.png" sizes="any" />
+        <link rel="icon" href="/ah-logo.jpeg" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider

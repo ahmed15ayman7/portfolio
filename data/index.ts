@@ -1,3 +1,5 @@
+import { iafce, Project, sporton } from "./projects";
+
 export const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
@@ -14,7 +16,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/ah-logo.png",
+    img: "/ah-logo.jpeg",
     spareImg: "",
   },
   {
@@ -71,23 +73,58 @@ export const gridItems = [
   },
 ];
 
-export const projects = [
+export const projects: Project[] = [
+  sporton,
+  iafce,
   {
-    id: 1,
-    title: "Access Point - E-commerce",
-    des: "Displaying and selling products, The user logs in. There is also a control panel for the admin. There are also comments on the products on the product information page and the filter system for the products",
-    img: "/aP.png",
-    // img: "/p1.svg",
-    iconLists: ["/re.svg", "/bo.png", "/js.png", "/fm.png", "/fi.png"],
-    link: "https://ahmed15ayman7.github.io/access-point",
+    id: 6,
+    title: "Almanafth",
+    des: "Al Manafth is your trusted platform for professional home services. Connect with verified service providers for plumbing, electrical, cleaning, and more.",
+    img: "/am.png",
+    iconLists: ["/next.svg", "/njs.svg", "/mo.svg", "/ts.svg", "/mui.svg"],
+    link: "http://manfaz.vercel.app/",
+    slug: "almanafth",
+    fullDescription: "Al Manafth is your trusted platform for professional home services. Connect with verified service providers for plumbing, electrical, cleaning, and more.",
+    sections: [],
+    tools: {
+      stacks: [{
+        title: "frontend stack",
+        tools: [
+          { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
+          { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
+          { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
+          { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
+          { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
+          { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
+          { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+        ],
+      }],
+    },
   },
   {
     id: 2,
-    title: "SPORTON - Connects athletes",
+    title: "SPORTON old website - Connects athletes",
     des: "Sporton is a multiconnector platform ( website + app ) , that perform the role of the bridge that connect athletes from a side to the brokers - clubs - institutes - brands , from another side. On Sporton , your profile is your athletic CV and by one button the broker can see all of your carrer , in addition of that we powered the platform with AI",
     img: "/sp.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mo.svg", "/c.svg"],
-    link: "https://sporton.website",
+    link: "https://sporton-test.vercel.app",
+    slug: "sporton-old",
+    fullDescription: "Sporton is a multiconnector platform ( website + app ) , that perform the role of the bridge that connect athletes from a side to the brokers - clubs - institutes - brands , from another side. On Sporton , your profile is your athletic CV and by one button the broker can see all of your carrer , in addition of that we powered the platform with AI",
+    sections: [],
+    tools: {
+      stacks: [{
+        title: "frontend stack",
+        tools: [
+          { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
+          { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
+          { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
+          { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
+          { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
+          { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
+          { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+        ],
+      }],
+    },
   },
   {
     id: 3,
@@ -96,6 +133,25 @@ export const projects = [
     img: "/5m.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.png", "/mui.svg"],
     link: "https://5amila.vercel.app",
+    slug: "5mila",
+    fullDescription: "Hair Transplant Procedures in Turkey. The hairline will be designed and agreed upon before the hair transplant day. Markings will be placed on the hair area to ensure even distribution of the grafts.",
+    sections: [],
+    tools: {
+      stacks:[
+        {
+          title: "frontend stack",
+          tools: [
+            { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
+            { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
+            { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
+            { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
+            { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
+            { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
+            { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+          ]
+        }
+      ]
+    }
   },
   {
     id: 4,
@@ -104,8 +160,25 @@ export const projects = [
     img: "/ta.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mo.svg", "/rq.svg"],
     link: "https://teacher-agent.vercel.app/?show=true",
+    slug: "teacher-agent",
+    fullDescription: "المساعد في متابعة العملية التعليمية يساعد المدارس والمعلمين على إدارة العملية التعليمية بكفاءة، ومتابعة أداء الطلاب والمعلمين، وتحقيق أقصى استفادة من التقنيات الحديثة في التعليم.",
+    sections: [],
+    tools: {
+      stacks: [{
+        title: "frontend stack",
+        tools: [
+          { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
+          { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
+          { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
+          { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
+          { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
+          { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
+          { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+        ],
+      }],
+    },
   },
-
+  
   {
     id: 5,
     title: "Bezrah",
@@ -113,14 +186,49 @@ export const projects = [
     img: "/bezrah.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/fm.png", "/mui.svg"],
     link: "https://www.bezrah.org/",
+    slug: "bezrah",
+    fullDescription: "Eco-Friendly Roofing & Planting Solutions Discover sustainable, eco-friendly roofing solutions and innovative planting techniques with Bezrah. Elevate your spaces with green, energy-efficient designs.",
+    sections: [],
+    tools: {
+      stacks: [{
+        title: "frontend stack",
+        tools: [
+          { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
+          { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
+          { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
+          { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
+          { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
+          { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
+          { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+        ],
+      }],
+    },
   },
   {
-    id: 6,
-    title: "Almanafth",
-    des: "Al Manafth is your trusted platform for professional home services. Connect with verified service providers for plumbing, electrical, cleaning, and more.",
-    img: "/am.png",
-    iconLists: ["/next.svg", "/njs.svg", "/mo.svg", "/ts.svg", "/mui.svg"],
-    link: "https://almanafth.com",
+    id: 1,
+    title: "Access Point - E-commerce",
+    des: "Displaying and selling products, The user logs in. There is also a control panel for the admin. There are also comments on the products on the product information page and the filter system for the products",
+    img: "/aP.png",
+    // img: "/p1.svg",
+    iconLists: ["/re.svg", "/bo.png", "/js.png", "/fm.png", "/fi.png"],
+    link: "https://ahmed15ayman7.github.io/access-point",
+    slug: "access-point",
+    fullDescription: "Displaying and selling products, The user logs in. There is also a control panel for the admin. There are also comments on the products on the product information page and the filter system for the products",
+    sections: [],
+    tools: {
+      stacks: [{
+        title: "frontend stack",
+        tools: [
+          { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
+          { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
+          { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
+          { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
+          { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
+          { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
+          { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+        ],
+      }],
+    },
   },
 ];
 export const activity = [
@@ -179,24 +287,24 @@ export const companies = [
     img: "/host.svg",
     nameImg: "/hostName.svg",
   },
-  {
-    id: 3,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
+  // {
+  //   id: 3,
+  //   name: "appwrite",
+  //   img: "/app.svg",
+  //   nameImg: "/appName.svg",
+  // },
   // {
   //   id: 4,
   //   name: "stream",
   //   img: "/s.svg",
   //   nameImg: "/streamName.svg",
   // },
-  // {
-  //   id: 5,
-  //   name: "docker.",
-  //   img: "/dock.svg",
-  //   nameImg: "/dockerName.svg",
-  // },
+  {
+    id: 5,
+    name: "docker.",
+    img: "/dock.svg",
+    nameImg: "/dockerName.svg",
+  },
 ];
 
 export const workExperience = [
@@ -251,3 +359,4 @@ export const socialMedia = [
     link: "https://www.linkedin.com/in/ahmed15ayman7",
   },
 ];
+
