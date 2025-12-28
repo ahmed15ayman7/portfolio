@@ -61,7 +61,7 @@ const Hero = () => {
             in Egypt.
           </p>
           <div className="flex gap-8 max-sm:flex-col">
-            <a href="#about">
+            <a href="#projects">
               <MagicButton
                 title="Show my work"
                 icon={<FaLocationArrow />}
