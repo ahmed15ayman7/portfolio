@@ -514,7 +514,7 @@ This portfolio is a personal project by Ahmed Ayman. Feel free to get inspired, 
 <div align="center">
   <p>Made with ❤️ by Ahmed Ayman</p>
   <p>© 2024 Ahmed Ayman. All rights reserved.</p>
-  
+
   <br />
   
   <a href="https://ahmed15ayman7.vercel.app/">
@@ -527,5 +527,5 @@ This portfolio is a personal project by Ahmed Ayman. Feel free to get inspired, 
   
   <a href="https://www.linkedin.com/in/ahmed15ayman7">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="Connect on LinkedIn" />
-  </a>
+</a>
 </div>
