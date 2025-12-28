@@ -23,7 +23,7 @@ export async function generateMetadata({
   const desktopImages = page.images.filter(
     (img) => img.src.includes("/disktop/") || img.src.includes("/desktop/")
   );
-  const ogImageSrc = desktopImages[0]?.src || page.images[0]?.src || project.img;
+  const ogImageSrc = page.ogImage ||  desktopImages[0]?.src || page.images[0]?.src || (project.ogImage ?? project.img);
   const ogImage = ogImageSrc.startsWith("http") 
     ? ogImageSrc 
     : `https://ahmed15ayman7.vercel.app${ogImageSrc}`;

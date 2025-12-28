@@ -14,9 +14,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   // Get OG image (cover image)
-  const ogImage = project.img.startsWith("http") 
-    ? project.img 
-    : `https://ahmed15ayman7.vercel.app${project.img}`;
+  const ogImage = (project.ogImage ?? project.img).startsWith("http") 
+    ? project.ogImage ?? project.img
+    : `https://ahmed15ayman7.vercel.app${project.ogImage ?? project.img}`;
 
   return {
     title: `${project.title} | Ahmed Ayman Portfolio`,

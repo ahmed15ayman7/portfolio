@@ -81,7 +81,7 @@ export const PageCard = ({ page, projectSlug, sectionSlug, index }: PageCardProp
               className="flex items-center gap-2 text-purple text-sm"
               whileHover={{ x: 5 }}
             >
-              <span>View Details</span>
+              <span>View</span>
               <FaChevronRight className="text-xs" />
             </motion.div>
           </div>
