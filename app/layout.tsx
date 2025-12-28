@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title: "Ahmed Ayman Abdelgalel | Front-End Developer Portfolio",
+    title: "Ahmed Ayman Abdelgalel | Full Stack Developer  (Reactjs/Nextjs| Nodejs/Nestjs) Portfolio",
     description:
       "Showcasing Ahmed Ayman Abdelgalel's projects, skills, and expertise in web development using modern tools and frameworks.",
     url: "https://ahmed15ayman7.vercel.app",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmed Ayman Abdelgalel | Front-End Developer Portfolio",
+    title: "Ahmed Ayman Abdelgalel | Full Stack Developer  (Reactjs/Nextjs| Nodejs/Nestjs) Portfolio",
     description:
       "Discover the professional portfolio of Ahmed Ayman Abdelgalel, a front-end developer skilled in modern web technologies.",
     images: ["https://ahmed15ayman7.vercel.app/ah-logo.jpeg"],
