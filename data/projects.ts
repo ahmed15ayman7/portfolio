@@ -883,7 +883,10 @@ export const sporton: Project = {
       summary: "الواجهة العامة للمنصة (صفحة واحدة) لشرح Sporton وسياساتها والتواصل.",
       description:
         "تطبيق الـ Landing مسؤول عن تقديم المنصة بشكل عام: Hero يشرح الفكرة، من نحن، الرؤية والرسالة، المميزات، السياسات، الفرق بين الحسابات، وطرق التواصل.",
-
+youtubeVideo:{
+title:"Sporton – Landing Page | The Professional Network for Athletes",
+youtubeId:"eUHDNPLkuao",
+},
       images: [
         { id: 1, src: "/projects/sporton/landing/home/disktop/1.png", alt: "Landing page English" },
         { id: 2, src: "/projects/sporton/landing/home/disktop/2.png", alt: "Landing page English" },
