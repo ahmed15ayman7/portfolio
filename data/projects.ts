@@ -824,13 +824,13 @@ export const sporton: Project = {
   slug: "sporton",
   img: "/projects/sporton/cover.png",
   iconLists: [
-    "/icons/next.svg",
-    "/icons/re.svg",
-    "/icons/ts.svg",
-    "/icons/tail.svg",
-    "icon/fm.svg",
-    "/icons/NestJS.svg",
-    "/icons/Postgresql.svg",
+    "/next.svg",
+    "/re.svg",
+    "/ts.svg",
+    "/tail.svg",
+    "/fm.svg",
+    "/NestJS.svg",
+    "/Postgresql.svg",
   ],
   link: "https://sporton.club",
   des: "منصة تواصل اجتماعي للرياضيين شبيهة بـ LinkedIn، مبنية كـ Monorepo وتضم عدة تطبيقات تخدم المستخدمين والإدارة والتحليلات والتسويق.",
@@ -844,24 +844,24 @@ export const sporton: Project = {
         title: "Frontend Stack",
         notes: "Next.js + React مع TypeScript وواجهة سريعة قابلة للتوسع داخل Monorepo.",
         tools: [
-          { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
-          { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
-          { name: "TypeScript", icon: "/icons/typescript.svg", description: "Types & Safety" },
-          { name: "TailwindCSS", icon: "/icons/tailwind.svg", description: "Utility-first styling" },
-          { name: "Framer Motion", icon: "/icons/framer-motion.svg", description: "Animations" },
-          { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
-          { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+          { name: "Next.js", icon: "/next.svg", description: "App Router / SSR / SEO" },
+          { name: "React.js", icon: "/re.svg", description: "UI Components" },
+          { name: "TypeScript", icon: "/ts.svg", description: "Types & Safety" },
+          { name: "TailwindCSS", icon: "/tail.svg", description: "Utility-first styling" },
+          { name: "Framer Motion", icon: "/fm.svg", description: "Animations" },
+          { name: "React Icons", icon: "/react-icons.svg", description: "Icon library" },
+          { name: "React Query", icon: "/react-query.svg", description: "Server state & caching" },
         ],
       },
       {
         title: "Backend Stack",
         notes: "API موحد يخدم جميع التطبيقات داخل الـ Monorepo.",
         tools: [
-          { name: "NestJS", icon: "/icons/nestjs.svg", description: "Backend framework" },
-          { name: "TypeScript", icon: "/icons/typescript.svg", description: "Types & Safety" },
-          { name: "Prisma ORM", icon: "/icons/prisma.svg", description: "DB ORM & migrations" },
-          { name: "PostgreSQL", icon: "/icons/Postgresql.svg", description: "Relational database" },
-          { name: "Swagger", icon: "/icons/swagger.svg", description: "API documentation" },
+          { name: "NestJS", icon: "/NestJS.svg", description: "Backend framework" },
+          { name: "TypeScript", icon: "/ts.svg", description: "Types & Safety" },
+          { name: "Prisma ORM", icon: "/prisma.svg", description: "DB ORM & migrations" },
+          { name: "PostgreSQL", icon: "/Postgresql.svg", description: "Relational database" },
+          { name: "Swagger", icon: "/swagger.svg", description: "API documentation" },
         ],
       },
       {
@@ -885,9 +885,15 @@ export const sporton: Project = {
         "تطبيق الـ Landing مسؤول عن تقديم المنصة بشكل عام: Hero يشرح الفكرة، من نحن، الرؤية والرسالة، المميزات، السياسات، الفرق بين الحسابات، وطرق التواصل.",
 
       images: [
-        { id: 1, src: "/projects/sporton/landing/landing-overview.png", alt: "Sporton Landing Overview" },
+        { id: 1, src: "/projects/sporton/landing/home/disktop/1.png", alt: "Landing page English" },
+        { id: 2, src: "/projects/sporton/landing/home/disktop/2.png", alt: "Landing page English" },
+        { id: 3, src: "/projects/sporton/landing/home/disktop/3.png", alt: "Landing page English" },
+        { id: 5, src: "/projects/sporton/landing/home/disktop/5.png", alt: "Landing page English" },
+        { id: 6, src: "/projects/sporton/landing/home/disktop/6.png", alt: "Landing page English" },
+        { id: 8, src: "/projects/sporton/landing/home/disktop/8.png", alt: "Landing page English" },
+        { id: 9, src: "/projects/sporton/landing/home/disktop/9.png", alt: "Landing page English" },
       ],
-
+      
       pages: [
         {
           id: 1,
@@ -896,7 +902,7 @@ export const sporton: Project = {
           description:
             "صفحة واحدة تضم: Hero + من نحن + رؤيتنا ورسالتنا + مميزاتنا + سياسة الاسترجاع + سياسة الخصوصية + الفرق بين حسابات البرو والعادي + تواصل معنا.",
           images: [
-            { id: 1, src: "/projects/sporton/landing/home/disktop/1.png", alt: "Landing page English" },
+          { id: 1, src: "/projects/sporton/landing/home/disktop/1.png", alt: "Landing page English" },
             { id: 2, src: "/projects/sporton/landing/home/disktop/2.png", alt: "Landing page English" },
             { id: 3, src: "/projects/sporton/landing/home/disktop/3.png", alt: "Landing page English" },
             { id: 4, src: "/projects/sporton/landing/home/disktop/4.png", alt: "Landing page English" },
@@ -939,7 +945,23 @@ export const sporton: Project = {
       summary: "تطبيق التسجيل/الدخول والتحقق والدفع واختيار الدور وتجميع بيانات الحساب.",
       description:
         "مسار كامل لتسجيل المستخدم: تسجيل دخول/إنشاء حساب، تفعيل البريد، التحقق من الهاتف، استعادة كلمة المرور، اختيار الدور، إدخال البيانات حسب الدور، اختيار الرياضة، عرض الخطط والدفع، ثم حالات نجاح/فشل الدفع.",
-
+      images: [
+        { id: 1, src: "/projects/sporton/auth/signin/disktop/1.png", alt: "Sign in page English" },
+        { id: 2, src: "/projects/sporton/auth/signup/disktop/1.png", alt: "Sign up page English" },
+        { id: 3, src: "/projects/sporton/auth/activate/disktop/1.png", alt: "Activate email OTP page English" },
+        { id: 4, src: "/projects/sporton/auth/forgot-password/disktop/1.png", alt: "Forgot password page English" },
+        { id: 5, src: "/projects/sporton/auth/reset-password/disktop/1.png", alt: "Reset password page English" },
+        { id: 6, src: "/projects/sporton/auth/choose-role/disktop/1.png", alt: "Choose role page English" },
+        { id: 7, src: "/projects/sporton/auth/player-info/disktop/1.png", alt: "Player info page English" },
+        { id: 8, src: "/projects/sporton/auth/person-info/disktop/1.png", alt: "Person info page English" },
+        { id: 9, src: "/projects/sporton/auth/club-info/disktop/1.png", alt: "Club/company info page English" },
+        { id: 10, src: "/projects/sporton/auth/wait-for-approval/disktop/1.png", alt: "Wait for approval page English" },
+        { id: 11, src: "/projects/sporton/auth/sport-selection/disktop/1.png", alt: "Sports selection page English" },
+        { id: 12, src: "/projects/sporton/auth/priceing/disktop/1.png", alt: "Pricing page English" },
+        { id: 12, src: "/projects/sporton/auth/plans/disktop/1.png", alt: "Plans page English" },
+        { id: 13, src: "/projects/sporton/auth/payment-success/disktop/1.png", alt: "Payment success page English" },
+        { id: 14, src: "/projects/sporton/auth/payment-failure/disktop/1.png", alt: "Payment failure page English" },
+      ],
       pages: [
         {
           id: 1,
@@ -1148,7 +1170,44 @@ export const sporton: Project = {
         "التطبيق الرئيسي للمنصة ويحتوي على Layout عام (Navbar + Left/Right sidebars + Bottom bar للموبايل) ويدعم نشر المحتوى والتفاعل والمحادثات والإشعارات والفرص والمتجر وإدارة الحساب والملف الشخصي.",
 
       images: [
-        { id: 1, src: "/projects/sporton/home/layout.png", alt: "Home app layout" },
+        { id: 1, src: "/projects/sporton/home/on/disktop/1.png", alt: "Home feed page English" },
+            { id: 2, src: "/projects/sporton/home/on/disktop/2.png", alt: "Home feed page Arabic" },
+            { id: 3, src: "/projects/sporton/home/on/disktop/3.png", alt: "Home feed page English" },
+            { id: 4, src: "/projects/sporton/home/network/disktop/1.png", alt: "Network page English" },
+            { id: 5, src: "/projects/sporton/home/network/disktop/2.png", alt: "Network page Arabic" },
+            { id: 6, src: "/projects/sporton/home/network/disktop/3.png", alt: "Network page English" },
+            { id: 7, src: "/projects/sporton/home/chat/disktop/1.png", alt: "Chats page English" },
+            { id: 8, src: "/projects/sporton/home/chat/disktop/2.png", alt: "Chats page Arabic" },
+            { id: 9, src: "/projects/sporton/home/chat/disktop/3.png", alt: "Chats page English" },
+            { id: 10, src: "/projects/sporton/home/chat/disktop/4.png", alt: "Chats page Arabic" },
+            { id: 11, src: "/projects/sporton/home/notifications/disktop/1.png", alt: "Notifications page English" },
+            { id: 12, src: "/projects/sporton/home/notifications/disktop/2.png", alt: "Notifications page Arabic" },
+            { id: 13, src: "/projects/sporton/home/notifications/disktop/3.png", alt: "Notifications page English" },
+            { id: 14, src: "/projects/sporton/home/notifications/disktop/4.png", alt: "Notifications page Arabic" },
+            { id: 15, src: "/projects/sporton/home/foras/disktop/1.png", alt: "foras page" },
+            { id: 16, src: "/projects/sporton/home/foras/disktop/2.png", alt: "foras page" },
+            { id: 19, src: "/projects/sporton/home/store/disktop/1.png", alt: "Store page" },
+            { id: 20, src: "/projects/sporton/home/store/disktop/2.png", alt: "Store page" },
+            { id: 23, src: "/projects/sporton/home/my-products/disktop/1.png", alt: "My products page" },
+            { id: 24, src: "/projects/sporton/home/my-products/disktop/2.png", alt: "My products page" },
+            { id: 25, src: "/projects/sporton/home/my-products/disktop/3.png", alt: "My products page" },
+            { id: 26, src: "/projects/sporton/home/settings/disktop/1.png", alt: "Settings page" },
+            { id: 27, src: "/projects/sporton/home/settings/disktop/2.png", alt: "Settings page" },
+            { id: 28, src: "/projects/sporton/home/settings/disktop/3.png", alt: "Settings page" },
+            { id: 29, src: "/projects/sporton/home/settings/disktop/4.png", alt: "Settings page" },
+            { id: 30, src: "/projects/sporton/home/settings/disktop/5.png", alt: "Settings page" },
+            { id: 31, src: "/projects/sporton/home/settings/disktop/6.png", alt: "Settings page" },
+            { id: 32, src: "/projects/sporton/home/settings/disktop/7.png", alt: "Settings page" },
+            { id: 33, src: "/projects/sporton/home/settings/disktop/8.png", alt: "Settings page" },
+            { id: 33, src: "/projects/sporton/home/profile/disktop/1.png", alt: "Profile page" },
+            { id: 34, src: "/projects/sporton/home/profile/disktop/2.png", alt: "Profile page" },
+            { id: 35, src: "/projects/sporton/home/profile/disktop/3.png", alt: "Profile page" },
+            { id: 36, src: "/projects/sporton/home/profile/disktop/4.png", alt: "Profile page" },
+            { id: 37, src: "/projects/sporton/home/profile/disktop/5.png", alt: "Profile page" },
+            { id: 38, src: "/projects/sporton/home/profile/disktop/6.png", alt: "Profile page" },
+            { id: 39, src: "/projects/sporton/home/profile/disktop/7.png", alt: "Profile page" },
+            { id: 40, src: "/projects/sporton/home/profile/disktop/8.png", alt: "Profile page" },
+
       ],
 
       pages: [
@@ -1158,7 +1217,10 @@ export const sporton: Project = {
           slug: "layout",
           description:
             "Layout عام من 4 أقسام: Navbar + Left Sidebar + Right Sidebar + Bottom Sidebar للموبايل.",
-          images: [{ id: 1, src: "/projects/sporton/home/main-layout.png", alt: "Main layout" }],
+          images: [ { id: 1, src: "/projects/sporton/home/on/disktop/1.png", alt: "Home feed page English" },
+            { id: 2, src: "/projects/sporton/home/on/disktop/2.png", alt: "Home feed page Arabic" },
+            { id: 4, src: "/projects/sporton/home/network/disktop/1.png", alt: "Network page English" },
+          ],
           features: [
             "Navbar: Logo + Search + Navigation",
             "Left Sidebar: User card + profile views + friend suggestions carousel + ads (بعض الصفحات)",
@@ -1172,7 +1234,8 @@ export const sporton: Project = {
           slug: "home-feed",
           description:
             "الصفحة الرئيسية: إنشاء منشور (نص/صورة/فيديو/ملف شخصي/فرص) ثم عرض المنشورات مع التفاعل والتعليقات والمشاركة وإعادة النشر.",
-          images: [{ id: 1, src: "/projects/sporton/home/on/disktop/1.png", alt: "Home feed page English" },
+          images: [
+            { id: 1, src: "/projects/sporton/home/on/disktop/1.png", alt: "Home feed page English" },
             { id: 2, src: "/projects/sporton/home/on/disktop/2.png", alt: "Home feed page Arabic" },
             { id: 3, src: "/projects/sporton/home/on/disktop/3.png", alt: "Home feed page English" },
             { id: 4, src: "/projects/sporton/home/on/disktop/4.png", alt: "Home feed page Arabic" },
