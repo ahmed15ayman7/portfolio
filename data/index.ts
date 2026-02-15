@@ -153,31 +153,31 @@ export const projects: Project[] = [
       ]
     }
   },
-  {
-    id: 4,
-    title: "المساعد في متابعة العملية التعليمية",
-    des: "المساعد في متابعة العملية التعليمية يساعد المدارس والمعلمين على إدارة العملية التعليمية بكفاءة، ومتابعة أداء الطلاب والمعلمين، وتحقيق أقصى استفادة من التقنيات الحديثة في التعليم.",
-    img: "/ta.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mo.svg", "/rq.svg"],
-    link: "https://teacher-agent.vercel.app/?show=true",
-    slug: "teacher-agent",
-    fullDescription: "المساعد في متابعة العملية التعليمية يساعد المدارس والمعلمين على إدارة العملية التعليمية بكفاءة، ومتابعة أداء الطلاب والمعلمين، وتحقيق أقصى استفادة من التقنيات الحديثة في التعليم.",
-    sections: [],
-    tools: {
-      stacks: [{
-        title: "frontend stack",
-        tools: [
-          { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
-          { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
-          { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
-          { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
-          { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
-          { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
-          { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
-        ],
-      }],
-    },
-  },
+  // {
+  //   id: 4,
+  //   title: "المساعد في متابعة العملية التعليمية",
+  //   des: "المساعد في متابعة العملية التعليمية يساعد المدارس والمعلمين على إدارة العملية التعليمية بكفاءة، ومتابعة أداء الطلاب والمعلمين، وتحقيق أقصى استفادة من التقنيات الحديثة في التعليم.",
+  //   img: "/ta.png",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/mo.svg", "/rq.svg"],
+  //   link: "https://teacher-agent.vercel.app/?show=true",
+  //   slug: "teacher-agent",
+  //   fullDescription: "المساعد في متابعة العملية التعليمية يساعد المدارس والمعلمين على إدارة العملية التعليمية بكفاءة، ومتابعة أداء الطلاب والمعلمين، وتحقيق أقصى استفادة من التقنيات الحديثة في التعليم.",
+  //   sections: [],
+  //   tools: {
+  //     stacks: [{
+  //       title: "frontend stack",
+  //       tools: [
+  //         { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
+  //         { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
+  //         { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
+  //         { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
+  //         { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
+  //         { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
+  //         { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+  //       ],
+  //     }],
+  //   },
+  // },
   
   {
     id: 5,
@@ -204,32 +204,32 @@ export const projects: Project[] = [
       }],
     },
   },
-  {
-    id: 1,
-    title: "Access Point - E-commerce",
-    des: "Displaying and selling products, The user logs in. There is also a control panel for the admin. There are also comments on the products on the product information page and the filter system for the products",
-    img: "/aP.png",
-    // img: "/p1.svg",
-    iconLists: ["/re.svg", "/bo.png", "/js.png", "/fm.png", "/fi.png"],
-    link: "https://ahmed15ayman7.github.io/access-point",
-    slug: "access-point",
-    fullDescription: "Displaying and selling products, The user logs in. There is also a control panel for the admin. There are also comments on the products on the product information page and the filter system for the products",
-    sections: [],
-    tools: {
-      stacks: [{
-        title: "frontend stack",
-        tools: [
-          { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
-          { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
-          { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
-          { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
-          { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
-          { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
-          { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
-        ],
-      }],
-    },
-  },
+  // {
+  //   id: 1,
+  //   title: "Access Point - E-commerce",
+  //   des: "Displaying and selling products, The user logs in. There is also a control panel for the admin. There are also comments on the products on the product information page and the filter system for the products",
+  //   img: "/aP.png",
+  //   // img: "/p1.svg",
+  //   iconLists: ["/re.svg", "/bo.png", "/js.png", "/fm.png", "/fi.png"],
+  //   link: "https://ahmed15ayman7.github.io/access-point",
+  //   slug: "access-point",
+  //   fullDescription: "Displaying and selling products, The user logs in. There is also a control panel for the admin. There are also comments on the products on the product information page and the filter system for the products",
+  //   sections: [],
+  //   tools: {
+  //     stacks: [{
+  //       title: "frontend stack",
+  //       tools: [
+  //         { name: "Next.js", icon: "/icons/next.svg", description: "App Router / SSR / SEO" },
+  //         { name: "React.js", icon: "/icons/re.svg", description: "UI Components" },
+  //         { name: "TypeScript", icon: "/icons/ts.svg", description: "Types & Safety" },
+  //         { name: "TailwindCSS", icon: "/icons/tail.svg", description: "Utility-first styling" },
+  //         { name: "Framer Motion", icon: "/icons/fm.svg", description: "Animations" },
+  //         { name: "React Icons", icon: "/icons/react-icons.svg", description: "Icon library" },
+  //         { name: "React Query", icon: "/icons/react-query.svg", description: "Server state & caching" },
+  //       ],
+  //     }],
+  //   },
+  // },
 ];
 export const activity = [
   {
@@ -242,14 +242,24 @@ export const activity = [
     iconLists: ["/html.png", "/css.png", "/js.png", "/bo.png"],
     link: "https://www.linkedin.com/posts/ahmed15ayman7_1stabrglobal-gdsc-frontend-activity-7249420048518234113-XOiK?utm_source=share&utm_medium=member_desktop",
   },
+  // {
+  //   id: 2,
+  //   title: "Orgnizer in CODEAVOUR",
+  //   title2: "CODEAVOUR",
+  //   des: "It is a competition for children in the field of artificial intelligence.",
+  //   img: "/ca2.png",
+  //   iconLists: ["/org.png", "/wt.png"],
+  //   link: "#activity",
+  //   not: true,
+  // },
   {
     id: 2,
-    title: "Orgnizer in CODEAVOUR",
-    title2: "CODEAVOUR",
-    des: "It is a competition for children in the field of artificial intelligence.",
-    img: "/ca2.png",
+    title: "International Academy For Continuing Education",
+    title2: "IAFCE",
+    des: "Recognition from IAFCE for a successful 8-month partnership, contributing to the development of their LMS system and supporting multi-branch academic operations.",
+    img: "/ia-act.JPG",
     iconLists: ["/org.png", "/wt.png"],
-    link: "#activity",
+    link: "https://www.linkedin.com/posts/ahmed15ayman7_nextjs-nestjs-lms-ugcPost-7423843739309260800-d4QP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2602MB3h5-BE6QSILtzmpfObG8LYBBAeE",
     not: true,
   },
 ];
