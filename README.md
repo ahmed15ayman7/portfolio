@@ -529,3 +529,4 @@ This portfolio is a personal project by Ahmed Ayman. Feel free to get inspired, 
     <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="Connect on LinkedIn" />
 </a>
 </div>
+
