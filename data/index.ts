@@ -1,4 +1,12 @@
-import { iafce, Project, sporton } from "./projects";
+import {
+  aiaetar,
+  booksplatform,
+  iafce,
+  ifacegb,
+  nadiaElsayed,
+  Project,
+  sporton,
+} from "./projects";
 
 export const navItems = [
   { name: "Home", link: "#home" },
@@ -76,6 +84,10 @@ export const gridItems = [
 export const projects: Project[] = [
   sporton,
   iafce,
+  ifacegb,
+  booksplatform,
+  nadiaElsayed,
+  aiaetar,
   {
     id: 6,
     title: "Almanafth",
