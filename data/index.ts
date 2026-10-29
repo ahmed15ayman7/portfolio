@@ -61,12 +61,12 @@ export const gridItems = [
   {
     id: 5,
     title:
-      "Currently, I'm working on developing and building the SPORTON platform.",
+      "Currently working as a Software Engineer at Target for General Contracting.",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-40",
+    imgClassName: "absolute right-0 bottom-0 md:w-80 w-36 p-4",
     titleClassName: "justify-center md:justify-start lg:justify-center w-96",
-    img: "/sporton.jpg",
+    img: "/target-logo.png",
     spareImg: "/grid.svg",
   },
   {

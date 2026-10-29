@@ -68,10 +68,7 @@ const Hero = () => {
                 position="right"
               />
             </a>
-            <a
-              href="https://drive.google.com/file/d/1qBPz0orgH9GqEPkGUTWaSPMbyueQQx0X/view?usp=sharing"
-              target="_blank"
-            >
+            <a href="/cv">
               <MagicButton
                 title="Show my CV"
                 icon={<FaLocationArrow />}

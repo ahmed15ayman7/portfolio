@@ -103,3 +103,30 @@
     background: linear-gradient(135deg, #7c3aed 0%, #CBACF9 100%);
   }
 }
+
+/* CV page: print and PDF export show the sheet alone, on white */
+@media print {
+  .cv-chrome {
+    display: none !important;
+  }
+  main:has(.cv-sheet) {
+    background: #fff !important;
+    min-height: 0 !important;
+  }
+  main:has(.cv-sheet) > div {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  .cv-sheet {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+  .cv-section {
+    break-inside: auto;
+  }
+  .cv-entry {
+    break-inside: avoid;
+  }
+}
