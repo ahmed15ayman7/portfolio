@@ -54,7 +54,11 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   verification: {
-    google: "QKFI5sZoYEPLUQIxdslJep4Fj7KGE7af7yvS52kozsI",
+    // one token per Search Console property; keep both so neither drops out
+    google: [
+      "QKFI5sZoYEPLUQIxdslJep4Fj7KGE7af7yvS52kozsI",
+      "2KJqOcB61KAxzlTLm_8wNRxY9oTpxC5jifwLiFTRVrw",
+    ],
   },
 };
 
