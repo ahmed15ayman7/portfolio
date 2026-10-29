@@ -274,6 +274,16 @@ export const activity = [
     link: "https://www.linkedin.com/posts/ahmed15ayman7_nextjs-nestjs-lms-ugcPost-7423843739309260800-d4QP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD2602MB3h5-BE6QSILtzmpfObG8LYBBAeE",
     not: true,
   },
+  {
+    id: 3,
+    title: "Chef Nadia Elsayed Platform — Phase 1",
+    title2: "NADIA ELSAYED",
+    des: "Led the engineering team delivering Phase 1 of Chef Nadia El-Sayed's cooking platform — Flutter app, .NET 10 API, admin console and an Egyptian-Arabic AI assistant — presented live to the client.",
+    img: "/nadia-act.webp",
+    iconLists: ["/org.png", "/wt.png"],
+    link: "/projects/nadia-elsayed",
+    not: true,
+  },
 ];
 
 export const testimonials = [
