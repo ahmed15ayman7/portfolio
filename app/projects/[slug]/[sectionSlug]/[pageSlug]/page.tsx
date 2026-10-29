@@ -26,7 +26,7 @@ export async function generateMetadata({
   const ogImageSrc = page.ogImage ||  desktopImages[0]?.src || page.images[0]?.src || (project.ogImage ?? project.img);
   const ogImage = ogImageSrc.startsWith("http") 
     ? ogImageSrc 
-    : `https://ahmed15ayman7.com${ogImageSrc}`;
+    : `https://www.ahmed15ayman7.com${ogImageSrc}`;
 
   // Create features text for description
   const featuresText = page.features ? ` Features: ${page.features.slice(0, 3).join(", ")}` : "";
@@ -50,7 +50,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${page.title} - ${section.title} - ${project.title}`,
       description: page.description,
-      url: `https://ahmed15ayman7.com/projects/${project.slug}/${section.slug}/${page.slug}`,
+      url: `https://www.ahmed15ayman7.com/projects/${project.slug}/${section.slug}/${page.slug}`,
       siteName: "Ahmed Ayman Portfolio",
       images: [
         {
@@ -71,7 +71,7 @@ export async function generateMetadata({
       creator: "@ahmed15ayman7",
     },
     alternates: {
-      canonical: `https://ahmed15ayman7.com/projects/${project.slug}/${section.slug}/${page.slug}`,
+      canonical: `https://www.ahmed15ayman7.com/projects/${project.slug}/${section.slug}/${page.slug}`,
     },
   };
 }

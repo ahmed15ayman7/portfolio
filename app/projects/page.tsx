@@ -23,11 +23,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "All Projects | Ahmed Ayman Portfolio",
     description,
-    url: "https://ahmed15ayman7.com/projects",
+    url: "https://www.ahmed15ayman7.com/projects",
     siteName: "Ahmed Ayman Portfolio",
     images: [
       {
-        url: "https://ahmed15ayman7.com/ah-logo.jpg",
+        url: "https://www.ahmed15ayman7.com/ah-logo.jpg",
         width: 1200,
         height: 630,
         alt: "Ahmed Ayman Portfolio",
@@ -40,10 +40,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "All Projects | Ahmed Ayman Portfolio",
     description,
-    images: ["https://ahmed15ayman7.com/ah-logo.jpg"],
+    images: ["https://www.ahmed15ayman7.com/ah-logo.jpg"],
   },
   alternates: {
-    canonical: "https://ahmed15ayman7.com/projects",
+    canonical: "https://www.ahmed15ayman7.com/projects",
   },
 };
 
