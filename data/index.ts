@@ -304,6 +304,46 @@ Thank you once again for your outstanding efforts.`,
     title: "Director of halulalemkan",
     img: "/halulalemkan.jpg",
   },
+  {
+    quote: `بصراحة أنا مكنتش متخيلة إن اللي في دماغي يطلع بالشكل ده.
+أحمد سمعني كويس، وفهم إن الوصفة مش مجرد فيديو — دي طريقة بتتنقل من إيد لإيد.
+كل تفصيلة طلبتها لقيتها اتعملت، وكل مرة بيوريني حاجة جديدة بفرح بيها زي أول كيكة نجحت معايا.
+شغل نضيف وصبر وذوق، وربنا يوفقك يا أحمد.`,
+    name: "الشيف نادية السيد",
+    title: "Chef & Owner, Capital Crest Properties | Cairo",
+    img: "/people/nadia-elsayed.webp",
+    dir: "rtl" as const,
+  },
+  {
+    quote: `بسم الله الرحمن الرحيم، والحمد لله الذي يسّر لنا من الكفاءات من يُعتمد عليه.
+المهندس أحمد أيمن من الشباب الذين جمعوا بين الإتقان في العمل والأمانة في الأداء، وهما أصلٌ لا يستقيم عملٌ مؤسسي بدونهما.
+عمل معنا على منظومة iFACE Global Board، فأظهر فهماً عميقاً لطبيعة العمل المؤسسي الدولي، والتزاماً بالمواعيد، وحرصاً على الجودة في كل تفصيلة.
+نسأل الله له التوفيق والسداد، وأن يبارك في علمه وعمله.`,
+    name: "د. محمد جابر",
+    title: "Founder, iFACE Global Board",
+    img: "/people/mohamed-gaber.webp",
+    dir: "rtl" as const,
+  },
+  {
+    quote: `أنا مكنتش أعرف أحمد قبل مشروع منصة الكتب، ده كان أول تعامل بينا.
+ومن الأسابيع الأولى عرفت إني قدام حد بيشتغل بضمير: بيسأل كويس قبل ما ينفّذ، وبيسلّم في ميعاده، وبيهتم بالتفصيلة الصغيرة اللي محدش هياخد باله منها.
+المنصة طلعت أجمل من اللي كان في بالي، وده شغل مش كل يوم تلاقيه.
+بارك الله فيك يا ابني، وربنا يعلّي قدرك.`,
+    name: "أ. عاطف مظهر",
+    title: "Senior Journalist, Founder of Mawhopon",
+    img: "/people/atef-mazhar.webp",
+    dir: "rtl" as const,
+  },
+  {
+    quote: `أنا رشّحت أحمد لمشروع الشيف نادية وأنا مطمّن تماماً، والنتيجة أكدت إن الترشيح كان في محله.
+من ناحية الشغل: التزام بالمواعيد، تواصل واضح، وقدرة على إدارة فريق وتسليم منتج متكامل مش مجرد كود.
+ومن ناحية شخصية: راجل كلمته كلمة، وده اللي بيخلي الواحد يحط اسمه ضمان عليه قدام عميل.
+فخور بيك يا صديقي، ومستني الجاي.`,
+    name: "م. زكريا الشال",
+    title: "President, Real Agency",
+    img: "/people/zakaria-elshal.webp",
+    dir: "rtl" as const,
+  },
 ];
 
 export const companies = [
@@ -339,6 +379,20 @@ export const companies = [
   },
 ];
 
+// Shown on the home page, in this order. Everything else lives on /projects.
+export const featuredProjectSlugs = [
+  "nadia-elsayed",
+  "ifacegb",
+  "booksplatform",
+  "sporton",
+  "aiaetar",
+  "iafce",
+];
+
+export const featuredProjects: Project[] = featuredProjectSlugs
+  .map((slug) => projects.find((project) => project.slug === slug))
+  .filter((project): project is Project => Boolean(project));
+
 export const people = [
   {
     id: 1,
@@ -352,7 +406,7 @@ export const people = [
     id: 2,
     name: "Atef Mazhar",
     role: "Senior Journalist, Founder of Mawhopon",
-    desc: "The mentor who shaped my early path and taught me far more than code. A senior journalist and multiple award winner, including Best Website in the Middle East in 2009 for his platform Mawhopon.",
+    desc: "A senior journalist and multiple award winner, including Best Website in the Middle East in 2009 for his platform Mawhopon. We met over Books Platform, and he became a mentor whose guidance reached far beyond the work itself.",
     img: "/people/atef-mazhar.webp",
     link: "/projects/booksplatform",
   },

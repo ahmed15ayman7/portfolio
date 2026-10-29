@@ -15,7 +15,7 @@ export const InfiniteMovingCards = ({
     name: string;
     title: string;
     img: string;
-
+    dir?: "rtl" | "ltr";
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -106,19 +106,23 @@ export const InfiniteMovingCards = ({
             // change to idx cuz we have the same name
             key={idx}
           >
-            <blockquote>
+            <blockquote dir={item.dir ?? "ltr"}>
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               {/* change text color, text-lg */}
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
+              <span className=" relative z-20 block whitespace-pre-line text-sm md:text-lg leading-[1.6] text-white font-normal">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 {/* add this div for the profile img */}
-                <div className="me-3 w-20 h-20">
-                  <img src={item.img} alt="profile" />
+                <div className="me-3 w-20 h-20 shrink-0">
+                  <img
+                    src={item.img}
+                    alt="profile"
+                    className="w-full h-full object-cover object-top rounded-full"
+                  />
                 </div>
                 <span className="flex flex-col gap-1">
                   {/* change text color, font-normal to font-bold, text-xl */}

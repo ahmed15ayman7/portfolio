@@ -3,8 +3,9 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 
-import { projects } from "@/data";
+import { featuredProjects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import MagicButton from "./MagicButton";
 
 const RecentProjects = () => {
   const router = useRouter();
@@ -26,7 +27,7 @@ const RecentProjects = () => {
         <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item, i) => (
+        {featuredProjects.map((item, i) => (
           <div
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
@@ -95,6 +96,15 @@ const RecentProjects = () => {
             </PinContainer>
           </div>
         ))}
+      </div>
+
+      <div className="flex justify-center mt-4">
+        <MagicButton
+          title="View all projects"
+          icon={<FaLocationArrow />}
+          position="right"
+          handleClick={() => router.push("/projects")}
+        />
       </div>
     </div>
   );

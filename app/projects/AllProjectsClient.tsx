@@ -1,0 +1,101 @@
+"use client";
+
+import { FaLocationArrow } from "react-icons/fa6";
+import { useRouter } from "next/navigation";
+
+import { projects } from "@/data";
+import { PinContainer } from "@/components/ui/Pin";
+import { Breadcrumb } from "@/components/ui/Breadcrumb";
+
+const AllProjectsClient = () => {
+  const router = useRouter();
+
+  const handleProjectClick = (item: any) => {
+    // same rule as the home page: no sections means there is no detail page yet
+    if (!item.sections || item.sections.length === 0) {
+      window.open(item.link, "_blank");
+    } else {
+      router.push(`/projects/${item.slug}`);
+    }
+  };
+
+  return (
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className="max-w-7xl w-full py-20">
+        <Breadcrumb items={[{ label: "Projects", href: "/projects" }]} />
+
+        <h1 className="heading mt-10">
+          All <span className="text-purple">projects</span>
+        </h1>
+        <p className="text-center text-white-200 mt-5 max-w-2xl mx-auto">
+          Every project I have shipped, from full platforms down to smaller
+          builds.
+        </p>
+
+        <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+          {projects.map((item) => (
+            <div
+              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+              key={item.id}
+              onClick={() => handleProjectClick(item)}
+            >
+              <PinContainer title={item.link} href={item.link}>
+                <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                  <div
+                    className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                    style={{ backgroundColor: "#13162D" }}
+                  >
+                    <img src="/bg.png" alt="bgimg" />
+                  </div>
+                  <img
+                    src={item.img}
+                    alt="cover"
+                    className="z-10 p-1 absolute bottom-0"
+                  />
+                </div>
+
+                <h2 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+                  {item.title}
+                </h2>
+                <p
+                  className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                  style={{ color: "#BEC1DD", margin: "1vh 0" }}
+                >
+                  {item.des}
+                </p>
+
+                <div className="flex items-center justify-between mt-7 mb-3">
+                  <div className="flex items-center">
+                    {item.iconLists.map((icon, index) => (
+                      <div
+                        key={index}
+                        className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        style={{
+                          transform: `translateX(-${5 * index + 2}px)`,
+                          backgroundColor: icon === "/fm.png" ? "white" : "",
+                        }}
+                      >
+                        <img src={icon} alt="icon5" className="p-2" />
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex justify-center items-center">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      {item.sections && item.sections.length > 0
+                        ? "View"
+                        : "Check Live Site"}
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </div>
+                </div>
+              </PinContainer>
+            </div>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default AllProjectsClient;
