@@ -26,7 +26,7 @@ export async function generateMetadata({
   const ogImageSrc = sectionImages[0]?.src || project.img;
   const ogImage = ogImageSrc.startsWith("http") 
     ? ogImageSrc 
-    : `https://ahmed15ayman7.vercel.app${ogImageSrc}`;
+    : `https://ahmed15ayman7.com${ogImageSrc}`;
 
   return {
     title: `${section.title} - ${project.title} | Ahmed Ayman Portfolio`,
@@ -45,7 +45,7 @@ export async function generateMetadata({
     openGraph: {
       title: `${section.title} - ${project.title}`,
       description: section.description || section.summary,
-      url: `https://ahmed15ayman7.vercel.app/projects/${project.slug}/${section.slug}`,
+      url: `https://ahmed15ayman7.com/projects/${project.slug}/${section.slug}`,
       siteName: "Ahmed Ayman Portfolio",
       images: [
         {
@@ -66,7 +66,7 @@ export async function generateMetadata({
       creator: "@ahmed15ayman7",
     },
     alternates: {
-      canonical: `https://ahmed15ayman7.vercel.app/projects/${project.slug}/${section.slug}`,
+      canonical: `https://ahmed15ayman7.com/projects/${project.slug}/${section.slug}`,
     },
   };
 }

@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CV | Ahmed Ayman Abdelgalel",
     description,
-    url: "https://ahmed15ayman7.vercel.app/cv",
+    url: "https://ahmed15ayman7.com/cv",
     siteName: "Ahmed Ayman Portfolio",
     images: [
       {
-        url: "https://ahmed15ayman7.vercel.app/ah-logo.jpg",
+        url: "https://ahmed15ayman7.com/ah-logo.jpg",
         width: 1200,
         height: 630,
         alt: "Ahmed Ayman Abdelgalel CV",
@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CV | Ahmed Ayman Abdelgalel",
     description,
-    images: ["https://ahmed15ayman7.vercel.app/ah-logo.jpg"],
+    images: ["https://ahmed15ayman7.com/ah-logo.jpg"],
   },
   alternates: {
-    canonical: "https://ahmed15ayman7.vercel.app/cv",
+    canonical: "https://ahmed15ayman7.com/cv",
   },
 };
 

@@ -27,18 +27,18 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Ahmed Ayman Ahmed Abdelgalel",
-      url: "https://ahmed15ayman7.vercel.app",
+      url: "https://ahmed15ayman7.com",
     },
   ],
   openGraph: {
     title: "Ahmed Ayman Abdelgalel | Full Stack Developer  (Reactjs/Nextjs| Nodejs/Nestjs) Portfolio",
     description:
       "Showcasing Ahmed Ayman Abdelgalel's projects, skills, and expertise in web development using modern tools and frameworks.",
-    url: "https://ahmed15ayman7.vercel.app",
+    url: "https://ahmed15ayman7.com",
     type: "website",
     images: [
       {
-        url: "https://ahmed15ayman7.vercel.app/ah-logo.jpg",
+        url: "https://ahmed15ayman7.com/ah-logo.jpg",
         width: 1200,
         height: 630,
         alt: "Ahmed Ayman Abdelgalel Portfolio Preview",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Ahmed Ayman Abdelgalel | Full Stack Developer  (Reactjs/Nextjs| Nodejs/Nestjs) Portfolio",
     description:
       "Discover the professional portfolio of Ahmed Ayman Abdelgalel, a front-end developer skilled in modern web technologies.",
-    images: ["https://ahmed15ayman7.vercel.app/ah-logo.jpg"],
+    images: ["https://ahmed15ayman7.com/ah-logo.jpg"],
   },
   robots: "index, follow",
 };

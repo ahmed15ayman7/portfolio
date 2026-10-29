@@ -14,7 +14,7 @@ export const cvProfile = {
   location: "Benha, Qalyubia, Egypt",
   phone: "01284959694",
   email: "info@ahmed15ayman7.com",
-  site: "ahmed15ayman7.vercel.app",
+  site: "ahmed15ayman7.com",
   linkedin: "linkedin.com/in/ahmed15ayman7",
   github: "github.com/ahmed15ayman7",
   summary:

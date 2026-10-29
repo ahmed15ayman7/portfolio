@@ -12,7 +12,7 @@ export function generateProjectMetadata(slug: string) {
 
   const ogImage = project.img.startsWith("http") 
     ? project.img 
-    : `https://ahmed15ayman7.vercel.app${project.img}`;
+    : `https://ahmed15ayman7.com${project.img}`;
 
   return {
     title: `${project.title} | Ahmed Ayman Portfolio`,
@@ -28,7 +28,7 @@ export function generateProjectMetadata(slug: string) {
     openGraph: {
       title: project.title,
       description: project.fullDescription || project.des,
-      url: `https://ahmed15ayman7.vercel.app/projects/${project.slug}`,
+      url: `https://ahmed15ayman7.com/projects/${project.slug}`,
       siteName: "Ahmed Ayman Portfolio",
       images: [
         {
@@ -49,7 +49,7 @@ export function generateProjectMetadata(slug: string) {
       creator: "@ahmed15ayman7",
     },
     alternates: {
-      canonical: `https://ahmed15ayman7.vercel.app/projects/${project.slug}`,
+      canonical: `https://ahmed15ayman7.com/projects/${project.slug}`,
     },
   };
 }
@@ -72,7 +72,7 @@ export function generateSectionMetadata(projectSlug: string, sectionSlug: string
   const ogImageSrc = sectionImages[0]?.src || project.img;
   const ogImage = ogImageSrc.startsWith("http") 
     ? ogImageSrc 
-    : `https://ahmed15ayman7.vercel.app${ogImageSrc}`;
+    : `https://ahmed15ayman7.com${ogImageSrc}`;
 
   return {
     title: `${section.title} - ${project.title} | Ahmed Ayman Portfolio`,
@@ -86,7 +86,7 @@ export function generateSectionMetadata(projectSlug: string, sectionSlug: string
     openGraph: {
       title: `${section.title} - ${project.title}`,
       description: section.description || section.summary,
-      url: `https://ahmed15ayman7.vercel.app/projects/${projectSlug}/${sectionSlug}`,
+      url: `https://ahmed15ayman7.com/projects/${projectSlug}/${sectionSlug}`,
       siteName: "Ahmed Ayman Portfolio",
       images: [
         {
@@ -107,7 +107,7 @@ export function generateSectionMetadata(projectSlug: string, sectionSlug: string
       creator: "@ahmed15ayman7",
     },
     alternates: {
-      canonical: `https://ahmed15ayman7.vercel.app/projects/${projectSlug}/${sectionSlug}`,
+      canonical: `https://ahmed15ayman7.com/projects/${projectSlug}/${sectionSlug}`,
     },
   };
 }
@@ -130,7 +130,7 @@ export function generatePageMetadata(projectSlug: string, sectionSlug: string, p
   const ogImageSrc = desktopImages[0]?.src || page.images[0]?.src || project.img;
   const ogImage = ogImageSrc.startsWith("http") 
     ? ogImageSrc 
-    : `https://ahmed15ayman7.vercel.app${ogImageSrc}`;
+    : `https://ahmed15ayman7.com${ogImageSrc}`;
 
   const featuresText = page.features ? ` Features: ${page.features.slice(0, 3).join(", ")}` : "";
 
@@ -147,7 +147,7 @@ export function generatePageMetadata(projectSlug: string, sectionSlug: string, p
     openGraph: {
       title: `${page.title} - ${section.title} - ${project.title}`,
       description: page.description,
-      url: `https://ahmed15ayman7.vercel.app/projects/${projectSlug}/${sectionSlug}/${pageSlug}`,
+      url: `https://ahmed15ayman7.com/projects/${projectSlug}/${sectionSlug}/${pageSlug}`,
       siteName: "Ahmed Ayman Portfolio",
       images: [
         {
@@ -168,7 +168,7 @@ export function generatePageMetadata(projectSlug: string, sectionSlug: string, p
       creator: "@ahmed15ayman7",
     },
     alternates: {
-      canonical: `https://ahmed15ayman7.vercel.app/projects/${projectSlug}/${sectionSlug}/${pageSlug}`,
+      canonical: `https://ahmed15ayman7.com/projects/${projectSlug}/${sectionSlug}/${pageSlug}`,
     },
   };
 }
