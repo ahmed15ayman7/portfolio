@@ -53,6 +53,9 @@ export const metadata: Metadata = {
     images: ["https://ahmed15ayman7.com/ah-logo.jpg"],
   },
   robots: "index, follow",
+  verification: {
+    google: "QKFI5sZoYEPLUQIxdslJep4Fj7KGE7af7yvS52kozsI",
+  },
 };
 
 export default function RootLayout({
