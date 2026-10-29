@@ -339,6 +339,41 @@ export const companies = [
   },
 ];
 
+export const people = [
+  {
+    id: 1,
+    name: "Dr. Mohamed Gaber",
+    role: "Founder, iFACE Global Board",
+    desc: "Founder of the iFACE international board for accreditation and training across the United States and the Middle East. I worked with him on building iFACE Global Board's platform, from the public site to the sovereign enterprise OS behind it.",
+    img: "/people/mohamed-gaber.webp",
+    link: "/projects/ifacegb",
+  },
+  {
+    id: 2,
+    name: "Atef Mazhar",
+    role: "Senior Journalist, Founder of Mawhopon",
+    desc: "The mentor who shaped my early path and taught me far more than code. A senior journalist and multiple award winner, including Best Website in the Middle East in 2009 for his platform Mawhopon.",
+    img: "/people/atef-mazhar.webp",
+    link: "/projects/booksplatform",
+  },
+  {
+    id: 3,
+    name: "Eng. Zakaria Elshal",
+    role: "President, Real Agency",
+    desc: "Head of Real Agency for real estate marketing, and the reason the Chef Nadia El-Sayed project reached me in the first place. I owe him a great deal for that trust and introduction.",
+    img: "/people/zakaria-elshal.webp",
+    link: "/projects/nadia-elsayed",
+  },
+  {
+    id: 4,
+    name: "Chef Nadia Elsayed",
+    role: "Chef & Owner, Capital Crest Properties | Cairo",
+    desc: "Chef and owner of Capital Crest Properties in Cairo, and the owner of the Chef Nadia website and mobile app currently in development. A pleasure to build her platform around her own kitchen and voice.",
+    img: "/people/nadia-elsayed.webp",
+    link: "/projects/nadia-elsayed",
+  },
+];
+
 export const workExperience = [
   {
     id: 1,
