@@ -121,7 +121,8 @@
     margin: 0 !important;
     border-radius: 0 !important;
     box-shadow: none !important;
-    padding: 0 !important;
+    /* keep real side margins on the sheet itself */
+    padding: 18mm 16mm !important;
   }
   .cv-section {
     break-inside: auto;
